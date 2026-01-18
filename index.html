@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>GradeIQ - GPA Calculator</title>
-        <link = style.css></link>
-    </head>
-    <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GradeIQ – GPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
   <div class="app">
-    <h1> GradeIQ GPA Calculator</h1>
-    <p class="subtitle">A simple grade-to-GPA converter</p>
+    <div class="top">
+      <h1>GradeIQ</h1>
+      <button id="themeToggle">🌙</button>
+    </div>
+
+    <p class="subtitle">A universal grade-to-GPA calculator</p>
+
+    <div class="section">
+      <label>Your Name</label>
+      <input type="text" id="username" placeholder="Enter your name">
+    </div>
 
     <div class="section">
       <label>GPA Scale</label>
@@ -24,7 +33,6 @@
       <select id="gradeSystem">
         <option value="indian">Indian (O, A+, A...)</option>
         <option value="international">International (A, B, C...)</option>
-        <option value="custom">Custom</option>
       </select>
     </div>
 
@@ -41,5 +49,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
