@@ -7,7 +7,6 @@ const subjectsDiv = document.getElementById("subjects");
 const usernameInput = document.getElementById("username");
 const themeToggle = document.getElementById("themeToggle");
 
-// ---------- SUBJECTS ----------
 function addSubject(data = {}) {
   const div = document.createElement("div");
   div.className = "subject-row";
@@ -19,8 +18,6 @@ function addSubject(data = {}) {
   subjectsDiv.appendChild(div);
   saveData();
 }
-
-// ---------- GPA ----------
 function calculateGPA() {
   const scale = document.getElementById("gpaScale").value;
   const system = document.getElementById("gradeSystem").value;
@@ -65,7 +62,6 @@ function convert10to4(g) {
   return 0;
 }
 
-// ---------- STORAGE ----------
 function saveData() {
   const data = {
     username: usernameInput.value,
@@ -102,3 +98,4 @@ themeToggle.onclick = () => {
 
 loadData();
 if (subjectsDiv.children.length === 0) addSubject();
+
